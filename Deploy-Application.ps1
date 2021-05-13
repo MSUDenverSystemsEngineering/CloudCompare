@@ -182,7 +182,7 @@ Try {
 
 		# <Perform Uninstallation tasks here>
 		## Product Code {E36D8881-C2B4-473E-A794-44437C1C7745}
-		Execute-Process -Path "C:\Program Files\CloudCompareStereo\unins000.exe" -Parameters "/SILENT"
+		Execute-Process -Path "C:\Program Files\CloudCompareStereo\unins000.exe" -Parameters "/VERYSILENT"
 
 		##*===============================================
 		##* POST-UNINSTALLATION
