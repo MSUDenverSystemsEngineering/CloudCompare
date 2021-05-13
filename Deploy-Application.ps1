@@ -141,7 +141,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path '$dirFiles\CloudCompareStereo_v2.11.3_setup_x64.exe' -Parameters '/verysilent'
+		Execute-Process -Path "$dirFiles\CloudCompareStereo_v2.11.3_setup_x64.exe" -Parameters "/verysilent"
 
 		##*===============================================
 		##* POST-INSTALLATION
@@ -182,7 +182,7 @@ Try {
 
 		# <Perform Uninstallation tasks here>
 		## Product Code {E36D8881-C2B4-473E-A794-44437C1C7745}
-		Execute-Process -Path 'C:\Program Files\CloudCompareStereo\unins000.exe' -Parameters '/SILENT'
+		Execute-Process -Path "C:\Program Files\CloudCompareStereo\unins000.exe" -Parameters "/SILENT"
 
 		##*===============================================
 		##* POST-UNINSTALLATION
