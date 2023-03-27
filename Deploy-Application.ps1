@@ -66,13 +66,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'CloudCompare'
 	[string]$appName = 'CloudCompare'
-	[string]$appVersion = '2.12.2'
+	[string]$appVersion = '2.13'
 	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '06/08/2022'
-	[string]$appScriptAuthor = 'Ryan McKenna'
+	[string]$appScriptDate = '03/27/2023'
+	[string]$appScriptAuthor = 'Will Jarvill'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -145,7 +145,7 @@ Try {
 			}
 
 			## <Perform Installation tasks here>
-			Execute-Process -Path "$dirFiles\CloudCompare_v2.12.2_setup_x64.exe" -Parameters "/verysilent"
+			Execute-Process -Path "$dirFiles\CloudCompare_v2.13.alpha_setup_x64.exe" -Parameters "/verysilent"
 
 			##*===============================================
 			##* POST-INSTALLATION
@@ -243,8 +243,8 @@ Catch {
 # SIG # Begin signature block
 # MIImVgYJKoZIhvcNAQcCoIImRzCCJkMCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCCUfzUthv2oN0JE
-# KaQg3SQZFfb2NTK/RaG/61++LK8gOqCCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAyBRI89qEmUXiN
+# ZwVOs4e4XrtcdvSvnfiibECq8FAv06CCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
 # jTanyYqJ1pQWMA0GCSqGSIb3DQEBDAUAMHsxCzAJBgNVBAYTAkdCMRswGQYDVQQI
 # DBJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcMB1NhbGZvcmQxGjAYBgNVBAoM
 # EUNvbW9kbyBDQSBMaW1pdGVkMSEwHwYDVQQDDBhBQUEgQ2VydGlmaWNhdGUgU2Vy
@@ -418,32 +418,32 @@ Catch {
 # ZDErMCkGA1UEAxMiU2VjdGlnbyBQdWJsaWMgQ29kZSBTaWduaW5nIENBIFIzNgIR
 # AKVN33D73PFMVIK48rFyyjEwDQYJYIZIAWUDBAIBBQCggYQwGAYKKwYBBAGCNwIB
 # DDEKMAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgorBgEE
-# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgbEftLlgsPU+T
-# 2UzcBxlRSWZFSn+W9ToAsXm/xaWTa48wDQYJKoZIhvcNAQEBBQAEggGAmSSTeUEt
-# gWlsq622+puwD/Zq8pfHOYwnMxAmGcybX1IARoMIf5/uSpVDhe281SUqzY8pB20h
-# B7WWEqiLOnHl6gD9XmxOsuFONNXc9qFoBOOlFBGQBF7F8ZJjpbhWQuvicAdHY1Gq
-# G51gFnOCODYQ+wd0FKzW9UhViLF7c5we/YFw2C2x3vxKct9vIN4ojthJTaffvEOv
-# CnKSC7HP6lEeBGJP3Z0FKQkwK9bTl4zzsAc1AG0tR8GW2ej3Mk24QOo3Fu5Lndy1
-# Ub6QvuoX1pxn4dn5O2IRhqaxGanqY96nUOYKAlg70d613DXN7XKOLYzY3KyS5mon
-# TqJdzywcp/Z7Cyar+2+WUYbxbEKk2sV9k8lPWvfRvFIqKobH9tl76TCW+qbJpE44
-# o49dtD4jZGQi4r1DI+PYCCEU+x89MAv5qNk1nxbDm+mM3Ti93xD+P0kayb2TNtlV
-# DS2Hdq7uvlcnSdsEsLGYvpjjJkUxyggTS8X0FqOGAcLNLUPUnS5gVgfUoYIDTDCC
+# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgVpM+GA1MZyJO
+# COGiQXcA6+s267AhOj7vPeCnO5Wl+EMwDQYJKoZIhvcNAQEBBQAEggGAjyvgo3fg
+# 11AHiu7QtAJcGiu+Oc5Y+kgJ2HdtICvrMNCNXlM2EJezFLVZuUElSsWRVS4rEWLk
+# gKILwOYzuKACitj4CmytD2/yZTZWIqEa5LpOaOaaxOb8UEsx1XL6PFuRmLnZcGQv
+# 9Ig/g09nMSB48ZpG8or6nLeEc5/Spjz1TFpPgsL/4olKTqCR1Y9nB7WOAFU3bLkI
+# Vles6FLslLBl7QrijAwhMED6BcPvQVRWKUiOMZ2jMLLCunDJEoNw27lYqpxwNZY+
+# mQByo1EX4YiGUvfG+cPbbJ6i9n6400fO257urKmcdCVNye0MVjmvQgZQFdmZ9D6F
+# /hNRcN67l1t8sgrdkYCTcFYHzaVkLqP0tuui1KdcVskkcgcHgGN8i8UETlpB/odT
+# I80X3XRn+nEsMSoxCg2Qv9lFHd3vfyBZxlwnErM2KvzzY6qsfvFZQ7aEl3euLxZs
+# 4rDYOIVUB/gFfiai120Uka6LUdpQV9qdqArQU4fa9jbI6mP8pClGp+JmoYIDTDCC
 # A0gGCSqGSIb3DQEJBjGCAzkwggM1AgEBMIGSMH0xCzAJBgNVBAYTAkdCMRswGQYD
 # VQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNV
 # BAoTD1NlY3RpZ28gTGltaXRlZDElMCMGA1UEAxMcU2VjdGlnbyBSU0EgVGltZSBT
 # dGFtcGluZyBDQQIRAJA5f5rSSjoT8r2RXwg4qUMwDQYJYIZIAWUDBAICBQCgeTAY
-# BgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjA2MDkx
-# NzU4NTVaMD8GCSqGSIb3DQEJBDEyBDAYxdcJI8x4Mg3gD1qJJwbFFHm6etOUZYtS
-# 4G+KJ59r0mMCjW1CMMBYnVmWj6y3ewowDQYJKoZIhvcNAQEBBQAEggIASFLQrQp+
-# 4OBGRSemkMD2/Ouc9rt7G4/5QrzRT0atUtQHvfHgW3kHPi+O6uNcrPiZ/IkcUDpE
-# X+1kOmVWxG8/3JjxbsVfzjdJaeOU6zN4exY6Fw+glMqd8VPl5CXpGZe7DetOizib
-# DORNG3eR+PRk9jMdXXLwTr86th+uXduuF2jJLlIJoZJ7cIZbO0+gIDbJ52mbrByn
-# 2bRyv1OySJBX/cAmkTKJXxVXx2Jqq7DCNBArHGUwmD5Wb3zfEwM/Nw9x7SZr4xtQ
-# cdP9epsopJKr3Yb6MLxqkoEOwgSRZObEp++aFFz54xXxM6RqjGYkF8FgdYiJIUmC
-# 7t+OFmPpBwtduOPFzIk+DbotYhZhBh71pcFQC4kQfoIXi4J1ehwBRJ3s99Vw+AMW
-# lvo0BvSWXYgBXxSuHJconMTsu3O/8olHGaUH3Z30tWNMJ3VjNcpkLeTgb8293lZU
-# hStGzynwA3ulg84CX7Yy7L1hQyJiW5EHf94T8IRGEK5EtV6B8KtKoZ/nX/UXrgy/
-# RwcFcmWKCCDx4JDPtaeH60r/qyXB85zvDNkd8Kfaw9zz7TKzUz/0cCDT6ag6erVg
-# 5MviJb3LAin/K7E7r0vpMTeu3DqjxLArK9fmGqKzGV09yfngndtTeWNu3RO2mZhu
-# UlcVfWHH2gdSH9c+sDyDOchxwq1ASJ0gsTY=
+# BgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMzAzMjcx
+# NDMwNDlaMD8GCSqGSIb3DQEJBDEyBDAD2nrDRiNLXzlkDRd4ExHUr+Zkb8RrIawL
+# C9yuwGFcBuOWwosTVCiQkdTfS0VEOlwwDQYJKoZIhvcNAQEBBQAEggIAIUko4WUw
+# 5kHFe1iWX2/qlEp+MhEnPXlFWz08qMaThThTlVB/ODnWNHa99ND97RrxIvBrjpSS
+# X6X2WN7OZFQejZyFvOnI/mS/jGVELhlN08wfI4+m3On+yexIn1vuiZbPgCmwCSBM
+# 1AF+wZ1CCINmlxuPVJRy+1lE4s6UDKn/xFDIT5FcngiqldHahORnRBFHCUjnFJ7M
+# TxZZkl4tn83UY9x3rFk8z6pRKEidDSn+yTYwMDStl/oHflURLUUESZCpxSxytJ6w
+# xUbCczmXqGHnmUlffUUEoLg3bfFv7dGXF3DjnczRzVkOcdH46FHU1j3N7XP02qon
+# FPSwdbMsChw27gx58dmgopbj/hmwbYg4ls6M92hQBiCV81JOV6igK6MXKx/WOgao
+# OPw2v5lbnEDHueYjP0zffJ2sb3HmJ7EM/aQx4bVI5repa/KCcfMUlx/U37u8j/rq
+# jEoYciLoxkrW0y40YHtbPv3XtSfSEK1pWnnLWeoo9Rmx7AthVKUbtL3M0OIpCThm
+# RBLFIl6iUvwG18Jlogd4J+xLHJz7s0VBvgs73V4UiXiw0L88u04QDHPax22fXuT9
+# gNyKQaoVkz00823Ke3uh2Fe9dg6Miep5W5NUC+O3fz68i+K6Wm60FnTR+jhyixGE
+# FIJ3fn+OEz7lWq/lA3XtgIRovjX+kb8K6fM=
 # SIG # End signature block
